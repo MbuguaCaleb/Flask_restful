@@ -1,6 +1,5 @@
 """INSTANCES OF VARIOUS CLASSES THAT I AM IMPORTING"""
 
-
 from flask import Flask
 from flask_restful import Api
 from views import Blogs,SingleBlog
