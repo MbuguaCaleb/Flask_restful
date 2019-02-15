@@ -34,6 +34,8 @@ class TestMyBlogApp(unittest.TestCase):
         return resp
 
     def test_posting_a_blog(self):
+         #resp=self.client.post(path='/blog',data=json.dumps(self.data), content_type='application/json')
+        
         resp = self.post()
         self.assertEqual(resp.status_code, 201)
         self.assertTrue(resp.json['blog_id'])
