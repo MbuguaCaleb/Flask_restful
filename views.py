@@ -4,11 +4,10 @@ from flask_restful import Resource
 from flask import request,make_response,jsonify
 
 
-
 blog_list =[]
+
 class Blogs(Resource):
     def post(self):
-
         req=request.get_json()
 
         new={
@@ -81,6 +80,7 @@ class SingleBlog(Resource):
                     "msg": "ok",
                     "blog": blog
                 }), 200)
+
 
             updated_blog = {
                 "id": id,
